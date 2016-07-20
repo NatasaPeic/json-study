@@ -38,7 +38,9 @@ As it makes sense to you please write the following in JSON format:
 - Has lived in two places recently: 123 Fake street, and 2 Muchinfo Road
 
 ```json
-<!-- your answer here -->
+JSON isn't an object although it looks like an object (represented by key-value pairs). It is a string with a specific format.
+It is language independent, and it is easy for humans to read and write as well as for machines to parse and generate.
+
 ```
 
 ...I forgot, my roomate Dave has two goldfish, one named Bob (he's red) and the
@@ -46,7 +48,14 @@ other named Mr.MagicNibbles (yellow) and bites a bit. Please copy the JSON you
 already wrote and include the information about Dave's fish.
 
 ```json
-<!-- your answer here -->
+-  Jason has many things...
+- A Cat named Mr.Kitty
+- Two goldfish named Bob and Mr.MagicNibbles
+- Bob is red
+- Mr.MagicNibbles is yellow and likes to bite
+- Two roomates named Dave and Miller
+- A Love of the Red Sox, Patriots and Bruins
+- Has lived in two places recently: 123 Fake street, and 2 Muchinfo Road
 ```
 
 ## JSON Methods
@@ -54,7 +63,34 @@ already wrote and include the information about Dave's fish.
 Using the JSON your wrote above, can you write a method on the JSON?
 
 ```json
-<!-- your answer here -->
+{ "Jason":
+  {"cat" : "Mr.Kitty" {
+                       "goldfish" : "Bob" {
+                                           "color" : "red" {
+                       "goldfish" : "Mr.MagicNibbles" {
+                                           "color" : "yellow",
+                                           "behaviour" : "agressive", {
+                                  "roomate1" : "Dave" {
+                                  "roomate2" : "Miller" {
+                                        "sport1" : "Red Sox" {
+                                        "sport2" : "Patriots" {
+                                        "sport3" : "Bruins" {
+                                             "address1" : "123 Fake Street" {
+                                             "address2" : "2 Muchinfo indeed muchinfo Road"
+                                             }
+                                        }
+                                        }
+                                        }
+                                  }
+                                  }
+                         }
+                         }
+
+  }
+  }
+  }
+}
+
 ```
 
 ## JSON Comments
@@ -62,5 +98,5 @@ Using the JSON your wrote above, can you write a method on the JSON?
 Using the JSON your wrote above, can you write a comment in the JSON?
 
 ```json
-<!-- your answer here -->
+No. You can't write a comment in JSON. It is a string with a specific format.
 ```
